@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            height: 100vh;
+            background-color: #383838;
+        }
+
+        .bloco {
+            padding: 18px;
+            border-radius: 20px;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .bloco__title {
+            font: 400 3rem 'san-serif';
+            margin: 0 auto;
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            list-style-type: none;
+            background-color: yellow;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            background-color: #eee;
+            border: 1px solid;
+            text-align: center;
+            padding: 16px;
+            transition: all .5s ease-in;
+            font-size: 1.4rem;
+        }
+
+        li:hover {
+            background-color: rgba(56, 56, 56, 0.6);
+        }
+    </style>
 </head>
 <body>
-    <script src="index.js"></script>
+    <div class="bloco">
+        <h1 class="bloco__title">Filmes/Series Favoritos</h1>
+        <ul>
+            <li>Invocação do Mal</li>
+            <li>Interistelar</li>
+            <li>Vikings</li>
+            <li>The Walking Dead</li>
+            <li>Unsolved</li>
+        </ul>
+    </div>
 </body>
 </html>
