@@ -1,2 +1,5 @@
-const unic = document.querySelector('#bloco__title')
-console.log(unic)
+const tudo = document.querySelectorAll('li')
+
+tudo.forEach(Element => {
+    console.log(Element)
+})
