@@ -1,7 +1,14 @@
-function somar(a, b) {
-    return a + b
+function pegueIdade(id) {
+    if(id >= 18) {
+        return true
+    } else {
+        return false
+    }
 }
 
-let res = somar(3, 4)
-
-console.log(res)
+let verify = pegueIdade(3)
+if (verify) {
+    console.log(`Você é maior de idade`)
+} else {
+    console.log(`Você não é maior de idade`)
+}
