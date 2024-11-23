@@ -1,2 +1,2 @@
-const tag = document.getElementsByTagName('li')
-console.log(tag)
+const unic = document.querySelector('#bloco__title')
+console.log(unic)
