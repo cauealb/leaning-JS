@@ -1,14 +1,9 @@
-function pegueIdade(id) {
-    if(id >= 18) {
-        return true
-    } else {
-        return false
-    }
+function calcPorcentagem(x, y) {
+    const conta = (y / x) * 100
+    return conta
 }
 
-let verify = pegueIdade(3)
-if (verify) {
-    console.log(`Você é maior de idade`)
-} else {
-    console.log(`Você não é maior de idade`)
-}
+let x = 30
+let y = 15
+let porcentagem = calcPorcentagem(x, y)
+console.log(`${porcentagem}% de ${x} é ${y}`)
